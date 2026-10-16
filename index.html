@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Nethmi Thiloka Divyanjalee — Software Engineering Graduate & Front-End Developer</title>
+    <meta name="title" content="Nethmi Thiloka Divyanjalee — Software Engineering Graduate & Front-End Developer">
+    <meta name="description" content="Portfolio of Nethmi Thiloka Divyanjalee, BEng (Hons) First Class Software Engineer specializing in Front-End Web Development, Python, C#, ASP.NET, PHP, Java, and AI systems.">
+    <meta name="keywords" content="Nethmi Thiloka, Software Engineer, Portfolio, Front-End Developer, London Metropolitan University, Sri Lanka, Web Development, GitHub Pages">
+    <meta name="author" content="Nethmi Thiloka Divyanjalee">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Thiloka-006.github.io/">
+    <meta property="og:title" content="Nethmi Thiloka Divyanjalee — Software Engineering Graduate">
+    <meta property="og:description" content="Explore my 11 software projects, research papers, tech stack, and educational achievements.">
+    <meta property="og:image" content="assets/images/avatar.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Background Interactive Particle Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header id="navbar" class="nav-header">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-accent">&lt;</span>Nethmi<span class="logo-accent">/&gt;</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-item">About Me</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#research" class="nav-item">Research</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                
+                <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+
+                <button id="mobile-toggle" class="icon-btn mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="pulse-dot"></span> Available for First Professional Opportunity
+                </div>
+
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Nethmi Thiloka</span>
+                </h1>
+                
+                <h2 class="hero-subtitle">
+                    I am a <span id="typing-text" class="typing-target"></span><span class="cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    BEng (Hons) Software Engineering Graduate (First Class Honours) from London Metropolitan University. Passionate about crafting intuitive front-end interfaces, modern web solutions, and innovative software applications.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-lg btn-primary">
+                        Explore My Projects <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <div class="cv-dropdown-wrapper">
+                        <button id="download-cv-btn" class="btn btn-lg btn-outline cv-dropdown-btn" type="button">
+                            <i class="fa-solid fa-download"></i> Download CV <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </button>
+                        <div id="cv-dropdown-menu" class="cv-dropdown-menu">
+                            <a href="assets/docs/CV_With_Photo.pdf" download="Nethmi_Thiloka_CV_With_Photo.pdf" class="cv-dropdown-item">
+                                <i class="fa-solid fa-id-badge cv-icon-photo"></i> CV (With Photo)
+                            </a>
+                            <a href="assets/docs/CV_Without_Photo.pdf" download="Nethmi_Thiloka_CV_Without_Photo.pdf" class="cv-dropdown-item">
+                                <i class="fa-solid fa-file-lines cv-icon-nophoto"></i> CV (Without Photo)
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="https://github.com/Thiloka-006" target="_blank" rel="noopener" class="btn btn-lg btn-ghost">
+                        <i class="fa-brands fa-github"></i> GitHub Profile
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <span class="social-label">Connect with me:</span>
+                    <a href="https://github.com/Thiloka-006" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nethmi-thiloka-58bbaa31" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/94754229326" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:thilokanethmi6@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <img src="assets/images/avatar.jpeg" alt="Nethmi Thiloka Divyanjalee" class="avatar-img">
+                    <div class="tech-badge badge-1">
+                        <i class="fa-brands fa-python"></i> Python & AI
+                    </div>
+                    <div class="tech-badge badge-2">
+                        <i class="fa-brands fa-html5"></i> Web Dev
+                    </div>
+                    <div class="tech-badge badge-3">
+                        <i class="fa-brands fa-microsoft"></i> C# & ASP.NET
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;about-me&gt;</span>
+                    <h2 class="section-title">Professional Summary & Career Objective</h2>
+                    <p class="section-subtitle">Dedicated Software Engineer eager to build meaningful digital solutions.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Passionate about creating user-friendly digital solutions.</h3>
+                        <p>
+                            I am a motivated and dedicated Software Engineering student with a strong passion for developing innovative and efficient software solutions. I possess a solid foundation in programming, database management, and web development.
+                        </p>
+                        <p>
+                            <strong>Career Objective:</strong> To obtain an opportunity in the software engineering field where I can apply my knowledge, enhance my skills, and contribute to the success of an organization while gaining valuable industry experience.
+                        </p>
+
+                        <div class="personal-profile-box">
+                            <h4><i class="fa-solid fa-address-card"></i> Personal Profile</h4>
+                            <div class="profile-meta-grid">
+                                <div><strong>Full Name:</strong> Nethmi Thiloka Divyanjalee</div>
+                                <div><strong>Nationality:</strong> Sri Lankan</div>
+                                <div><strong>Date of Birth:</strong> 06.09.2002</div>
+                                <div><strong>Gender / Status:</strong> Female / Unmarried</div>
+                                <div><strong>Location:</strong> Kandy, Sri Lanka</div>
+                                <div><strong>Languages:</strong> Sinhala (Fluent), English (Intermediate)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-counter-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="stat-number" data-target="11">0</div>
+                            <div class="stat-label">Software Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                            <div class="stat-number" data-target="1">0</div>
+                            <div class="stat-label">First Class Honours</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-microscope"></i></div>
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Research Papers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Academic Diplomas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;academic-background&gt;</span>
+                    <h2 class="section-title">Education & Qualifications</h2>
+                    <p class="section-subtitle">My academic achievements and qualifications in Software Engineering.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Edu 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 — 2026</div>
+                            <h3 class="timeline-role">BEng (Hons) Software Engineering (Top-Up)</h3>
+                            <h4 class="timeline-company">London Metropolitan University, United Kingdom</h4>
+                            <div class="award-badge"><i class="fa-solid fa-medal"></i> Award Class: First Class Honours</div>
+                        </div>
+                    </div>
+
+                    <!-- Edu 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 — 2025</div>
+                            <h3 class="timeline-role">Pearson BTEC Level 5 Higher National Diploma in Computing (Software Engineering)</h3>
+                            <h4 class="timeline-company">ESOFT Metro Campus, Sri Lanka</h4>
+                            <div class="award-badge"><i class="fa-solid fa-star"></i> Grade: Distinction</div>
+                        </div>
+                    </div>
+
+                    <!-- Edu 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 — 2023</div>
+                            <h3 class="timeline-role">Assured Diploma in Information Technology (DITEC)</h3>
+                            <h4 class="timeline-company">Pearson Assured Organization | ESOFT Metro Campus</h4>
+                            <div class="award-badge"><i class="fa-solid fa-award"></i> Grade: Merit</div>
+                        </div>
+                    </div>
+
+                    <!-- Edu 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 — 2023</div>
+                            <h3 class="timeline-role">Assured Diploma in English (DIE)</h3>
+                            <h4 class="timeline-company">Pearson Assured Organization | ESOFT Metro Campus</h4>
+                            <div class="award-badge"><i class="fa-solid fa-award"></i> Grade: Merit</div>
+                        </div>
+                    </div>
+
+                    <!-- Edu 5 & 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2018 — 2021</div>
+                            <h3 class="timeline-role">GCE Advanced Level (2021) & Ordinary Level (2018)</h3>
+                            <h4 class="timeline-company">Swaranamali Girls’ College, Kandy, Sri Lanka</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;technical-skills&gt;</span>
+                    <h2 class="section-title">Technical & Professional Skills</h2>
+                    <p class="section-subtitle">Programming languages, frameworks, tools, and soft skills.</p>
+                </div>
+
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="all">All Skills</button>
+                    <button class="tab-btn" data-tab="prog">Programming & Web</button>
+                    <button class="tab-btn" data-tab="db">Databases & Tools</button>
+                    <button class="tab-btn" data-tab="soft">Soft & Design Skills</button>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Technical Skills -->
+                    <div class="skill-card" data-category="prog">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-python skill-icon html-color"></i>
+                            <span class="skill-name">Python & Pandas</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="skill-card" data-category="prog">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-html5 skill-icon html-color"></i>
+                            <span class="skill-name">HTML5, CSS3, JavaScript</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+                    </div>
+
+                    <div class="skill-card" data-category="prog">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-java skill-icon js-color"></i>
+                            <span class="skill-name">Java Programming</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                    </div>
+
+                    <div class="skill-card" data-category="prog">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-php skill-icon node-color"></i>
+                            <span class="skill-name">PHP & Flask</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+                    </div>
+
+                    <div class="skill-card" data-category="prog">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-microsoft skill-icon react-color"></i>
+                            <span class="skill-name">C# & ASP.NET Core MVC</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                    </div>
+
+                    <!-- DB & Tools -->
+                    <div class="skill-card" data-category="db">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-database skill-icon db-color"></i>
+                            <span class="skill-name">MySQL & MS SQL Server</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+                    </div>
+
+                    <div class="skill-card" data-category="db">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-network-wired skill-icon docker-color"></i>
+                            <span class="skill-name">Cisco Packet Tracer</span>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 82%;"></div></div>
+                    </div>
+
+                    <div class="skill-card" data-category="db">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-vial skill-icon git-color"></i>
+                            <span class="skill-name">PyTest & Automated Testing</span>
+                            <span class="skill-percent">84%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 84%;"></div></div>
+                    </div>
+
+                    <!-- Soft & Design -->
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-pen-nib skill-icon react-color"></i>
+                            <span class="skill-name">Website Designing & Wireframing</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-comments skill-icon css-color"></i>
+                            <span class="skill-name">Communication & Leadership</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+                    </div>
+
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-lightbulb skill-icon js-color"></i>
+                            <span class="skill-name">Problem Solving & Teamwork</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (11 Projects) -->
+        <section id="projects" class="section projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;software-portfolio&gt;</span>
+                    <h2 class="section-title">Projects & Systems</h2>
+                    <p class="section-subtitle">A showcase of 11 software engineering projects developed across web, AI, desktop, and networks.</p>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All (11)</button>
+                    <button class="filter-btn" data-filter="web">Web & AI</button>
+                    <button class="filter-btn" data-filter="net">C# & .NET / Java</button>
+                    <button class="filter-btn" data-filter="python">Python & DB</button>
+                    <button class="filter-btn" data-filter="network">Network & AI Sim</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="web python">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project1.jpeg" alt="Next-Gen Diet Planning System" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="1">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/Next-Gen-Diet-Planning-System" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">PHP / Python / Gemini AI</span>
+                            <h3 class="project-title">Next-Gen Diet Planning System</h3>
+                            <p class="project-description">
+                                AI-assisted diet planning platform featuring Gemini API chatbot, BMI tracking, progress monitoring, and nutritionist consultation dashboards.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">Gemini API</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="net web">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project2.png" alt="UniManage System" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="2">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/UniManage-System-" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">ASP.NET Core MVC / C#</span>
+                            <h3 class="project-title">UniManage – University Course System</h3>
+                            <p class="project-description">
+                                Comprehensive course management system for students, lecturers, and admins with RBAC, course enrollment, grading, and reporting.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">ASP.NET Core</span>
+                                <span class="tag">EF Core</span>
+                                <span class="tag">SQL Server</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="network">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project3.png" alt="Intelligent Rescue Agent Simulation" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="3">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/Intelligent-Rescue-Agent-Simulation" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Unity / C# / AI Simulation</span>
+                            <h3 class="project-title">Intelligent Rescue Agent Simulation</h3>
+                            <p class="project-description">
+                                AI-based rescue simulation showcasing pathfinding, state decision-making, visual perception, and multi-agent hazard interaction.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Unity 3D</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Artificial Intelligence</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="net">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project4.png" alt="GreenLife Organic Store System" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="4">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/GreenLife-Organic-Store-Management-System" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">C# / WinForms / SQL Server</span>
+                            <h3 class="project-title">GreenLife Organic Store System</h3>
+                            <p class="project-description">
+                                Desktop store management application with inventory management, cart order processing, stock monitoring, and sales reporting.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">WinForms</span>
+                                <span class="tag">SQL Server</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project5.png" alt="Centralized Sales Distribution" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="5">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/ISDN" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">PHP / MySQL / Web</span>
+                            <h3 class="project-title">Centralized Sales Distribution (ISDN)</h3>
+                            <p class="project-description">
+                                Sales distribution management platform for real-time stock tracking, order logistics, automated invoicing, and analytics.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">SQL Server</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project6.png" alt="Velvet Vogue Fashion Store" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="6">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/E-Commerce-Fashion-Website-" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Full-Stack E-Commerce</span>
+                            <h3 class="project-title">Velvet Vogue – Fashion Store</h3>
+                            <p class="project-description">
+                                Responsive online fashion store with dynamic catalog filtering, cart state management, checkout, and MySQL customer order management.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7 -->
+                    <article class="project-card" data-category="net">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project7.png" alt="Doctor Channeling System" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="7">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/Doctor-Channeling-System-" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Java / MySQL</span>
+                            <h3 class="project-title">Doctor Channeling System</h3>
+                            <p class="project-description">
+                                Doctor appointment scheduling system and medical record portal designed to reduce waiting times and streamline patient workflows.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Swing GUI</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8 -->
+                    <article class="project-card" data-category="python">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project8.png" alt="Dream Book Shop System" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="8">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/Online-Bookstore" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Python / Pandas / PyTest</span>
+                            <h3 class="project-title">Dream Book Shop System</h3>
+                            <p class="project-description">
+                                Bookstore management system utilizing Pandas for inventory analytics and PyTest automated unit testing for maximum data integrity.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">PyTest</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 9 -->
+                    <article class="project-card" data-category="python">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project9.png" alt="E-Space Mars Colonization DBMS" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="9">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/Database-Management-System" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Database Systems / SQL Server</span>
+                            <h3 class="project-title">E-Space Mars Colonization DBMS</h3>
+                            <p class="project-description">
+                                Relational database system with role-based access control, validation constraints, and analytical query interfaces for space colonization data.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">SQL Server</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">DBMS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 10 -->
+                    <article class="project-card" data-category="python">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project10.png" alt="Employee Leave Management System" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="10">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/Leave-Management-System" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Python / MySQL</span>
+                            <h3 class="project-title">Employee Leave Management System</h3>
+                            <p class="project-description">
+                                HR leave quota management system with employee and admin approval portals, improving administrative efficiency by 40%.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">HR Tech</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 11 -->
+                    <article class="project-card" data-category="network">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project11.png" alt="BlueScope Network Infrastructure" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-primary view-project-btn" data-project="11">
+                                    <i class="fa-solid fa-eye"></i> View Details
+                                </button>
+                                <a href="https://github.com/Thiloka-006/cisco-Packet-Project-" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Cisco Packet Tracer</span>
+                            <h3 class="project-title">BlueScope Network Infrastructure</h3>
+                            <p class="project-description">
+                                Enterprise network topology for Melbourne and Darwin offices with VLANs, subnetting, firewalls, and IoT/ERP integration.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Cisco</span>
+                                <span class="tag">VLAN</span>
+                                <span class="tag">Networking</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section (2 Researches) -->
+        <section id="research" class="section research-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;research-papers&gt;</span>
+                    <h2 class="section-title">Research & Academic Publications</h2>
+                    <p class="section-subtitle">Studies conducted in AI banking integration and AI-assisted educational technology.</p>
+                </div>
+
+                <div class="research-grid">
+                    <!-- Research 1 -->
+                    <div class="research-card">
+                        <div class="research-badge"><i class="fa-solid fa-building-columns"></i> Banking AI Research</div>
+                        <h3 class="research-title">AI in Online Banking Transactions – Sampath Bank</h3>
+                        <div class="research-date">Dec 2024 – Jan 2025</div>
+                        <p class="research-text">
+                            Investigated practical applications of Artificial Intelligence in online banking platforms at Sampath Bank. Analyzed system performance limitations, user adoption friction, and proposed optimization recommendations for enhanced banking UX.
+                        </p>
+                        <a href="assets/docs/research1.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-primary research-btn">
+                            <i class="fa-solid fa-file-pdf"></i> View Research Paper (PDF)
+                        </a>
+                    </div>
+
+                    <!-- Research 2 -->
+                    <div class="research-card">
+                        <div class="research-badge"><i class="fa-solid fa-language"></i> EdTech & AI Study</div>
+                        <h3 class="research-title">Evaluating Duolingo in Enhancing English Vocabulary</h3>
+                        <div class="research-date">May 2025 – Jul 2025</div>
+                        <p class="research-text">
+                            Conducted a study evaluating Duolingo's impact on English vocabulary acquisition among diploma students. Analyzed engagement metrics and learning outcomes to formulate strategies for integrating gamified AI tools into curricula.
+                        </p>
+                        <a href="assets/docs/research2.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-primary research-btn">
+                            <i class="fa-solid fa-file-pdf"></i> View Research Paper (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;get-in-touch&gt;</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">I am actively seeking my first professional opportunity in Software Engineering & Front-End Development.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Reach Out Directly</h3>
+                        <p>
+                            Feel free to contact me via email, phone, or WhatsApp. I look forward to discussing how I can contribute to your team.
+                        </p>
+
+                        <div class="contact-cards">
+                            <div class="info-card">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="info-label">Email Address</span>
+                                    <a href="mailto:thilokanethmi6@gmail.com" id="email-link" class="info-value">thilokanethmi6@gmail.com</a>
+                                </div>
+                                <button class="copy-btn" id="copy-email-btn" title="Copy Email">
+                                    <i class="fa-solid fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="info-label">Phone / WhatsApp</span>
+                                    <a href="https://wa.me/94754229326" target="_blank" class="info-value">+94 75 422 9326 (0754229326)</a>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="info-label">Address</span>
+                                    <span class="info-value">236/3 Yatihalagala Pallegama, Halloluwa, Kandy, Sri Lanka</span>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon"><i class="fa-brands fa-linkedin"></i></div>
+                                <div>
+                                    <span class="info-label">LinkedIn Profile</span>
+                                    <a href="https://www.linkedin.com/in/nethmi-thiloka-58bbaa31" target="_blank" class="info-value">Nethmi Thiloka Divyanjalee</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form" action="https://formsubmit.co/thilokanethmi6@gmail.com" method="POST">
+                            <!-- FormSubmit Anti-Spam & Delivery Configuration -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="New Portfolio Contact Message from Portfolio Website">
+
+                            <div class="form-group">
+                                <label for="user-name">Your Name</label>
+                                <input type="text" id="user-name" name="name" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-email">Your Email</label>
+                                <input type="email" id="user-email" name="email" placeholder="Enter your email address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-subject">Subject</label>
+                                <input type="text" id="user-subject" name="subject" placeholder="Job Opportunity / Project Inquiry" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-message">Message</label>
+                                <textarea id="user-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn btn-lg btn-primary form-submit-btn">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            
+                            <div id="form-status" class="form-status-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal-backdrop">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div id="modal-body">
+                <!-- Dynamic Content Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo">&lt;Nethmi Thiloka/&gt;</a>
+                
+            </div>
+
+            <div class="footer-copy">
+                &copy; <span id="year-span"></span> Nethmi Thiloka Divyanjalee. All rights reserved.
+            </div>
+
+            <button id="back-to-top" class="icon-btn back-to-top-btn" aria-label="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
